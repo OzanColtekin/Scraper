@@ -19,7 +19,7 @@ class Trendyol:
         self.dataFrame = pd.DataFrame(columns=['barcode', 'productBrand', 'productName', 'ratingCount', 'favories',
                                                'sellerPoint', 'price', 'productPoint', 'isFreeCargo',
                                                'sellerStock', 'date'])
-        self.databse = Database('OZAN\OZANMSSQL19', 'hizlianaliz_core', 'sa', 'ozan_1907')
+        self.databse = Database('OZAN\OZANMSSQL19', 'hizlianaliz_core', 'sa', 'pass')
 
     def gotourl(self, url, x=0):
         self.html = requests.get(url + str(x)).content

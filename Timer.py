@@ -4,7 +4,7 @@ import datetime
 import threading
 from PriceFinder import Price
 
-db = Database('OZAN\OZANMSSQL19', 'hizlianaliz', 'sa', 'ozan_1907')
+db = Database('OZAN\OZANMSSQL19', 'hizlianaliz', 'sa', 'pass')
 
 def updateRank():
   threading.Timer(120.0, updateRank).start()
